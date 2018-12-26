@@ -1,13 +1,13 @@
 export function count(state = 0, action) {
     switch (action.type) {
         case 'COUNT':
-            return 0;
+            return state + 1;
         default:
             return state;
     }
 }
 
-export function fetchRandom(state = null, action) {
+export function random(state = 'null', action) {
     switch (action.type) {
         case 'FETCH_RANDOM':
             return action.value;

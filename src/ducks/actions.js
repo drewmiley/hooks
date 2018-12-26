@@ -1,6 +1,6 @@
 export const mapDispatchToProps = dispatch => ({
     fetchRandom: url => dispatch(fetchRandom(url)),
-    count: songPlayingId => dispatch(count())
+    setCount: songPlayingId => dispatch(setCount())
 });
 
 const fetchRandom = params => dispatch => {
@@ -20,4 +20,4 @@ const random = value => ({
     value
 });
 
-const count = () => dispatch => dispatch({ type: 'COUNT' });
+const setCount = () => dispatch => dispatch({ type: 'COUNT' });

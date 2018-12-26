@@ -1,11 +1,11 @@
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { combineReducers } from 'redux';
-import { count, fetchRandom } from './reducers';
+import { count, random } from './reducers';
 
 const reducer = combineReducers({
     count,
-    fetchRandom
+    random
 });
 
 export default function configureStore(initialState) {

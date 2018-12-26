@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import SimpleText from './components/SimpleText';
+import {
+    V0
+} from './components';
 
 import { mapDispatchToProps } from './ducks/actions';
 
 class App extends Component {
     render() {
-        console.log(this.props);
         return <div>
-            <SimpleText />
+            <V0 {...this.props} />
         </div>
     }
 };
