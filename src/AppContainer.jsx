@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import {
-    V0
-} from './components';
+import * as Components from './components';
+import * as Hooks from './hooks';
 
 import { mapDispatchToProps } from './ducks/actions';
 
 class App extends Component {
     render() {
         return <div>
-            <V0 {...this.props} />
+            <Components.V0 {...this.props} />
+            <Hooks.V0 {...this.props} />
         </div>
     }
 };

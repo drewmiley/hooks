@@ -4,7 +4,7 @@ export default class V0 extends Component {
     render() {
         return (
             <>
-                <h2>V0</h2>
+                <h2>Component V0</h2>
                 <p>
                     <span>Count: {this.props.count}</span>
                     <span><button onClick={this.props.setCount}>Set Count</button></span>
