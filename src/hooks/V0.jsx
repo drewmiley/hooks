@@ -6,7 +6,7 @@ const V0 = props => {
             <h2>Component V0</h2>
             <p>
                 <span>Count: {props.count}</span>
-                <span><button onClick={props.setCount}>Set Count</button></span>
+                <span><button onClick={props.increment}>Increment</button></span>
             </p>
             <p>
                 <span>Random: {props.random}</span>
