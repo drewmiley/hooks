@@ -25,6 +25,10 @@ export default class V6 extends Component {
                     <span>Count: {this.state.count}</span>
                     <span><button onClick={() => this.setCount(this.state.count + 1)}>Increment</button></span>
                 </p>
+                <p>
+                    <span>Random: {this.props.random}</span>
+                    <span><button onClick={this.props.fetchRandom}>Fetch Random</button></span>
+                </p>
             </>
         );
     }

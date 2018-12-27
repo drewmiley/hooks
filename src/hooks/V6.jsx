@@ -1,18 +1,22 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 const V6 = props => {
     const [count, setCount] = useState(0);
 
-    useEffect(() => {
-        setCount(props.count);
-    }, [props.count])
+    const fetchRandomWithMultiplier = () => {
+        props.fetchRandom(count);
+    }
 
     return (
         <>
-            <h2>Hooks V5</h2>
+            <h2>Hooks V6</h2>
             <p>
                 <span>Count: {count}</span>
                 <span><button onClick={() => setCount(count + 1)}>Increment</button></span>
+            </p>
+            <p>
+                <span>Random: {props.random}</span>
+                <span><button onClick={fetchRandomWithMultiplier}>Fetch Random</button></span>
             </p>
         </>
     );
