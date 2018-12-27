@@ -21,7 +21,7 @@ export default class V1 extends Component {
             <>
                 <h2>Component V1</h2>
                 <p>
-                    <input type='text' placeholder='Input' value={this.state.value} onChange={this.onChange}></input>
+                    <input type='text' placeholder='Input' value={this.state.value} onChange={this.onChange} />
                     <button onClick={this.onClick}>Log Value</button>
                 </p>
             </>
