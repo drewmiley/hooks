@@ -5,16 +5,15 @@ export default class V6 extends Component {
         super(props);
         this.state = { count: 0 };
         this.setCount = this.setCount.bind(this);
+        this.fetchRandomWithMultiplier = this.fetchRandomWithMultiplier.bind(this);
     }
 
     setCount(count) {
         this.setState({ count });
     }
 
-    componentDidUpdate(prevProps) {
-        if (this.props.count !== prevProps.count) {
-            this.setCount(this.props.count);
-        }
+    fetchRandomWithMultiplier() {
+        this.props.fetchRandom(this.state.count);
     }
 
     render() {
@@ -27,7 +26,7 @@ export default class V6 extends Component {
                 </p>
                 <p>
                     <span>Random: {this.props.random}</span>
-                    <span><button onClick={this.props.fetchRandom}>Fetch Random</button></span>
+                    <span><button onClick={this.fetchRandomWithMultiplier}>Fetch Random</button></span>
                 </p>
             </>
         );
