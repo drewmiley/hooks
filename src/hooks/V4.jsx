@@ -6,11 +6,11 @@ const V4 = props => {
 
     useEffect(() => {
         if (!initialised) {
-            console.log(`component did mount`)
+            console.log(`hook did mount`);
             setInitialised(true);
             setCount(20);
         } else {
-            console.log(`component did update`)
+            console.log(`hook did update`);
         }
     })
 

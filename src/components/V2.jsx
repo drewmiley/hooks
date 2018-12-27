@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class V2 extends Component {
     constructor(props) {
         super(props);
-        this.state = { colors: ['red', 'green', 'blue'], index: 0};
+        this.state = { colors: ['red', 'green', 'blue'], index: 0 };
     }
 
     componentDidUpdate(prevProps) {
