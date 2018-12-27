@@ -4,6 +4,7 @@ import V2 from './V2';
 import V3 from './V3';
 import V4 from './V4';
 import V5 from './V5';
+import V6 from './V6';
 
 export {
     V0,
@@ -11,5 +12,6 @@ export {
     V2,
     V3,
     V4,
-    V5
+    V5,
+    V6
 };

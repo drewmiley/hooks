@@ -1,16 +1,16 @@
 export const mapDispatchToProps = dispatch => ({
-    fetchRandom: url => dispatch(fetchRandom(url)),
-    increment: songPlayingId => dispatch(increment())
+    fetchRandom: multiplier => dispatch(fetchRandom(multiplier)),
+    increment: () => dispatch(increment())
 });
 
-const fetchRandom = params => dispatch => {
+const fetchRandom = multiplier => dispatch => {
     fetch('https://www.random.org/quota/?format=plain')
         .then(response => {
             if (!response.ok) {
                 throw Error(response.statusText);
             }
 
-            return Math.floor(100 * Math.random());
+            return (parseInt(multiplier) || 1) * Math.floor(100 * Math.random());
         })
         .then(value => dispatch(random(value)));
 };
