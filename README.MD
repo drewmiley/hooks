@@ -26,3 +26,7 @@ A simple input text box with internal state. The background color of the heading
 ## Version 4
 
 A simple incrementable counter consisting of value and action button, logs to console when the component/hook mounts/updates.
+
+## Version 5
+
+A simple incrementable counter consisting of value and action button, is overwritten by props value whenever this changes.

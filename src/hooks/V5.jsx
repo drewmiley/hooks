@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const V4 = props => {
+const V5 = props => {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
@@ -9,7 +9,7 @@ const V4 = props => {
 
     return (
         <>
-            <h2>Hooks V4</h2>
+            <h2>Hooks V5</h2>
             <p>
                 <span>Count: {count}</span>
                 <span><button onClick={() => setCount(count + 1)}>Increment</button></span>
@@ -18,4 +18,4 @@ const V4 = props => {
     );
 }
 
-export default V4;
+export default V5;
