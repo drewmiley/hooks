@@ -11,6 +11,8 @@ class App extends Component {
         return <div>
             <Components.V0 {...this.props} />
             <Hooks.V0 {...this.props} />
+            <Components.V1 />
+            <Hooks.V1 />
         </div>
     }
 };
