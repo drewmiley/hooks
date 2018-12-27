@@ -9,7 +9,7 @@ Examples of React Hooks.
 
 ## Version 0
 
-Very simple. A simple incrementable counter consisting of value and action button, along with a random number fetcher similarly consisting of value and action button.
+A simple incrementable counter consisting of value and action button, along with a random number fetcher similarly consisting of value and action button.
 
 ## Version 1
 
@@ -22,3 +22,7 @@ Version 0, however the background color of the heading changes when either of th
 ## Version 3
 
 A simple input text box with internal state. The background color of the heading changes when the input changes at all, or if fetchRandom is called.
+
+## Version 4
+
+A simple incrementable counter consisting of value and action button, logs to console when the component/hook mounts/updates.
