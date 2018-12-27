@@ -13,4 +13,8 @@ Very simple. A simple incrementable counter consisting of value and action butto
 
 ## Version 1
 
-Comparison between a simple input text box with button that logs value contained in order to demonstrate a simple use case of the new function `useState`
+Comparison between a simple input text box with button that logs value contained in order to demonstrate a simple use case of the new function `useState`.
+
+## Version 2
+
+Version 0, however the background color of the heading changes when either of the two values changes. Note that the hooks version is one call ahead of the component.
