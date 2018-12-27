@@ -6,6 +6,7 @@ const V1 = () => {
             <h2>Hooks V1</h2>
             <p>
                 <input type='text' placeholder='Input'></input>
+                <button onClick={() => console.log('value')}>Log Value</button>
             </p>
         </>
     );
