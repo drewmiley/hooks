@@ -11,8 +11,8 @@ export default class V3 extends Component {
         this.setState({ value: e.target.value });
     }
 
-    componentDidUpdate(_, prevState) {
-        if (this.state.value !== prevState.value) {
+    componentDidUpdate(prevProps, prevState) {
+        if (this.state.value !== prevState.value || this.props.random !== prevProps.random) {
             const index = this.state.index === 2 ? 0 : this.state.index + 1;
             this.setState({ index });
         }

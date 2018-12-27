@@ -18,3 +18,7 @@ Comparison between a simple input text box with button that logs value contained
 ## Version 2
 
 Version 0, however the background color of the heading changes when either of the two values changes. Note that the hooks version is one call ahead of the component.
+
+## Version 3
+
+A simple input text box with internal state. The background color of the heading changes when the input changes at all, or if fetchRandom is called.

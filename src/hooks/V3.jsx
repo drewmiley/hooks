@@ -12,7 +12,7 @@ const V3 = props => {
     useEffect(() => {
         const newIndex = index === 2 ? 0 : index + 1;
         setIndex(newIndex);
-    }, [value])
+    }, [value, props.random])
 
     return (
         <>
