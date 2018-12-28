@@ -54,3 +54,7 @@ Version 7, but with multiple uses of useEffect.
 ## Version 11
 
 Expensive function call utilising useMemo, along with a button to trigger the call.
+
+# Version 12
+
+Expensive function call utilising useCallback, along with a button to trigger the call and a number input for number of loops.
