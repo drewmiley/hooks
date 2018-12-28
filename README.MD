@@ -50,3 +50,7 @@ Example use of useReducer incorporated in a internal state +/- counter.
 ## Version 10
 
 Version 7, but with multiple uses of useEffect.
+
+## Version 11
+
+Expensive function call utilising useMemo, along with a button to trigger the call.
