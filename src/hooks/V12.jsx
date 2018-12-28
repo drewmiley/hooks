@@ -7,7 +7,7 @@ const getProduct = (count, random, loops) => {
     return count * random;
 }
 
-const V11 = props => {
+const V12 = props => {
     const [value, setValue] = useState(NaN);
     const [trigger, setTrigger] = useState(false);
     const [loops, setLoops] = useState(100);
@@ -33,4 +33,4 @@ const V11 = props => {
     );
 }
 
-export default V11;
+export default V12;

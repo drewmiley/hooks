@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
 
-const getProduct = (count, random) => {
-    for (let i = 0; i < 100; i++) {
-        console.log('component computing expensive function')
+const getProduct = (count, random, loops) => {
+    for (let i = 0; i < loops; i++) {
+        console.log(`component computing expensive function looping ${loops} times`)
     }
     return count * random;
 }
 
-export default class V11 extends Component {
+export default class V12 extends Component {
     constructor(props) {
         super(props);
-        this.state = { trigger: false, loops: 100, product: getProduct(props.count, props.random) };
+        this.state = { value: NaN, trigger: false, loops: 100, product: () => getProduct(props.count, props.random, 100) };
     }
 
     componentDidUpdate(prevProps, prevState) {
+        if (this.state.loops !== prevState.loops) {
+            this.setState({ product: () => getProduct(this.props.count, this.props.random, this.state.loops) })
+        }
         if (this.state.trigger !== prevState.trigger) {
-            this.setState({ product: getProduct(this.props.count, this.props.random) })
+            this.setState({ value: this.state.product() })
         }
     }
 
@@ -24,7 +27,7 @@ export default class V11 extends Component {
             <>
                 <h2>Component V12</h2>
                 <p>
-                    <span>Count * Random: {this.state.product}</span>
+                    <span>Count * Random: {this.state.value}</span>
                 </p>
                 <p>
                     <span>Loops: <input type="number" name="quantity" value={this.state.loops} onChange={(e) => this.setState({ loops: parseInt(e.target.value) })} min="1" max="1000000" /></span>
