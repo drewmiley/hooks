@@ -38,3 +38,7 @@ A simple incrementable counter consisting of value and action button, along with
 ## Version 7
 
 A simple incrementable counter consisting of value and action button, unmounted when props.count > 5.
+
+## Version 8
+
+Async fetch of random user list.
