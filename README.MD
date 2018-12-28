@@ -37,7 +37,7 @@ A simple incrementable counter consisting of value and action button, along with
 
 ## Version 7
 
-A simple incrementable counter consisting of value and action button, unmounted when props.count > 5.
+A simple incrementable counter consisting of value and action button, unmounted when props.count > 5. Shows how to replace Component mounting lifecycle methods in Hooks.
 
 ## Version 8
 
@@ -46,3 +46,7 @@ Async fetch of random user list. Note that the hooks version calls twice, while 
 ## Version 9
 
 Example use of useReducer incorporated in a internal state +/- counter.
+
+## Version 10
+
+Version 7, but with multiple uses of useEffect.
