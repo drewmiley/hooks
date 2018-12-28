@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 
 const getProduct = (count, random) => {
     for (let i = 0; i < 100; i++) {
-        console.log('running memo function')
+        console.log('hook computing expensive function')
     }
     return count * random;
 }
