@@ -34,6 +34,8 @@ class App extends Component {
                 { this.props.count <= 5 && <Hooks.V10 {...this.props} />}
                 <Components.V11 {...this.props} />
                 <Hooks.V11 {...this.props} />
+                <Components.V12 {...this.props} />
+                <Hooks.V12 {...this.props} />
             </>
         )
     }
