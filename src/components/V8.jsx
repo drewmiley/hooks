@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class V8 extends Component {
     constructor(props) {
@@ -15,7 +15,7 @@ export default class V8 extends Component {
     render() {
         return (
             <>
-                <h2>Components V8</h2>
+                <h2>Component V8</h2>
                 <ul>
                     {this.state.users.map((user, i) => (
                         <li key={i}>{user.name.title} {user.name.first} {user.name.last}</li>

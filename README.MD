@@ -41,4 +41,8 @@ A simple incrementable counter consisting of value and action button, unmounted 
 
 ## Version 8
 
-Async fetch of random user list.
+Async fetch of random user list. Note that the hooks version calls twice, while the component only calls once.
+
+## Version 9
+
+Example use of useReducer incorporated in a internal state +/- counter.
