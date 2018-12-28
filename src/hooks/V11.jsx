@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useState, useMemo } from 'react';
+
+const getProduct = (count, random) => {
+    for (let i = 0; i < 100; i++) {
+        console.log('running memo function')
+    }
+    return count * random;
+}
 
 const V11 = props => {
+    const [trigger, setTrigger] = useState(false);
+    const product = useMemo(() => getProduct(props.count, props.random), [trigger]);
     return (
         <>
             <h2>Hooks V11</h2>
             <p>
-                <span>Count: {props.count}</span>
-                <span><button onClick={props.increment}>Increment</button></span>
-            </p>
-            <p>
-                <span>Random: {props.random}</span>
-                <span><button onClick={props.fetchRandom}>Fetch Random</button></span>
+                <span>Count * Random: {product}</span>
+                <span><button onClick={() => setTrigger(!trigger)}>Call Memo Function</button></span>
             </p>
         </>
     );
