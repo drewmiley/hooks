@@ -15,7 +15,7 @@ const V11 = props => {
             <h2>Hooks V11</h2>
             <p>
                 <span>Count * Random: {product}</span>
-                <span><button onClick={() => setTrigger(!trigger)}>Call Memo Function</button></span>
+                <span><button onClick={() => setTrigger(!trigger)}>Get Product</button></span>
             </p>
         </>
     );

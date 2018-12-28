@@ -25,7 +25,7 @@ export default class V11 extends Component {
                 <h2>Component V11</h2>
                 <p>
                     <span>Count * Random: {this.state.product}</span>
-                    <span><button onClick={() => this.setState({ trigger: !this.state.trigger })}>Call Memo Function</button></span>
+                    <span><button onClick={() => this.setState({ trigger: !this.state.trigger })}>Get Product</button></span>
                 </p>
             </>
         );
