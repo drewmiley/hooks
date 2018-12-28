@@ -34,3 +34,7 @@ A simple incrementable counter consisting of value and action button, is overwri
 ## Version 6
 
 A simple incrementable counter consisting of value and action button, along with a random number fetcher similarly consisting of value and action button. The count has purely internal state, and passes its value as a multiplier for use with fetch random number action.
+
+## Version 7
+
+A simple incrementable counter consisting of value and action button, unmounted when props.count > 5.
