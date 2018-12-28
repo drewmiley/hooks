@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 
 export default class V7 extends Component {
+    componentDidMount() {
+        console.log('component did mount');
+    }
+
     componentWillUnmount() {
         console.log('component will unmount');
     }

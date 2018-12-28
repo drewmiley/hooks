@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 
 const V7 = props => {
     useEffect(() => {
-        return () => console.log('hook will cleanup');
-    })
+        console.log('hook did mount');
+        return () => console.log('hook will unmount');
+    }, [])
 
     return (
         <>
