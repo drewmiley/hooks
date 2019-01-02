@@ -58,3 +58,7 @@ Expensive function call utilising useMemo, along with a button to trigger the ca
 # Version 12
 
 Expensive function call utilising useCallback, along with a button to trigger the call and a number input for number of loops.
+
+# Version 13
+
+Example of useContext for heading values.
