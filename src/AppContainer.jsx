@@ -36,6 +36,8 @@ class App extends Component {
                 <div className='half-width'><Hooks.V11 {...this.props} /></div>
                 <div className='half-width'><Components.V12 {...this.props} /></div>
                 <div className='half-width'><Hooks.V12 {...this.props} /></div>
+                <div className='half-width'><Components.V13 {...this.props} /></div>
+                <div className='half-width'><Hooks.V13 {...this.props} /></div>
             </>
         )
     }

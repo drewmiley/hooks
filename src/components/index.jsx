@@ -11,6 +11,7 @@ import V9 from './V9';
 import V10 from './V10';
 import V11 from './V11';
 import V12 from './V12';
+import V13 from './V13';
 
 export {
     V0,
@@ -25,5 +26,6 @@ export {
     V9,
     V10,
     V11,
-    V12
+    V12,
+    V13
 };
