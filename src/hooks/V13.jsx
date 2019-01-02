@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+import { HeadingContext } from '../AppContainer';
 
 const V13 = props => {
+    const context = useContext(HeadingContext);
+
     return (
         <>
-            <h2>Hooks V13</h2>
+            <h2>Hooks V13 - {context}</h2>
             <p>
                 <span>Count: {props.count}</span>
                 <span><button onClick={props.increment}>Increment</button></span>
