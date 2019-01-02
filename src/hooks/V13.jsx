@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import { HeadingContext } from '../AppContainer';
+import HeadingContext from '../HeadingContext';
 
 const V13 = props => {
     const context = useContext(HeadingContext);

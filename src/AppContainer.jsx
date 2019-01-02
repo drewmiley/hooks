@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 import * as Components from './components';
 import * as Hooks from './hooks';
 
-import { mapDispatchToProps } from './ducks/actions';
+import HeadingContext from './HeadingContext';
 
-export const HeadingContext = React.createContext();
+import { mapDispatchToProps } from './ducks/actions';
 
 class App extends Component {
     render() {
@@ -38,8 +38,10 @@ class App extends Component {
                 <div className='half-width'><Hooks.V11 {...this.props} /></div>
                 <div className='half-width'><Components.V12 {...this.props} /></div>
                 <div className='half-width'><Hooks.V12 {...this.props} /></div>
-                <HeadingContext.Provider value='Example use of Context'>
+                <HeadingContext.Provider value='Example use of Context in Component'>
                     <div className='half-width'><Components.V13 {...this.props} /></div>
+                </HeadingContext.Provider>
+                <HeadingContext.Provider value='Example of useContext in Hook'>
                     <div className='half-width'><Hooks.V13 {...this.props} /></div>
                 </HeadingContext.Provider>
             </>
