@@ -19,7 +19,7 @@ export default class V1 extends Component {
     render() {
         return (
             <>
-                <h2>Component V1</h2>
+                <h2>Component V1 - Simple internal state input</h2>
                 <p>
                     <input type='text' placeholder='Input' value={this.state.value} onChange={this.onChange} />
                     <button onClick={this.onClick}>Log Value</button>

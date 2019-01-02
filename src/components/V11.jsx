@@ -22,7 +22,7 @@ export default class V11 extends Component {
     render() {
         return (
             <>
-                <h2>Component V11</h2>
+                <h2>Component V11 - Memoized value displayed</h2>
                 <p>
                     <span>Count * Random: {this.state.product}</span>
                     <span><button onClick={() => this.setState({ trigger: !this.state.trigger })}>Get Product</button></span>

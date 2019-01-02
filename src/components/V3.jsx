@@ -21,7 +21,7 @@ export default class V3 extends Component {
     render() {
         return (
             <>
-                <h2 style={{backgroundColor: this.state.colors[this.state.index]}}>Component V3</h2>
+                <h2 style={{backgroundColor: this.state.colors[this.state.index]}}>Component V3 - Component updates on input change and random number change</h2>
                 <input type='text' placeholder='Input' value={this.state.value} onChange={this.onChange} />
             </>
         );

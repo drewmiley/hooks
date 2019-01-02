@@ -11,7 +11,7 @@ const V2 = props => {
 
     return (
         <>
-            <h2 style={{backgroundColor: colors[index]}}>Hooks V2</h2>
+            <h2 style={{backgroundColor: colors[index]}}>Hooks V2 - Hook updates with useEffect on all props changes</h2>
             <p>
                 <span>Count: {props.count}</span>
                 <span><button onClick={props.increment}>Increment</button></span>

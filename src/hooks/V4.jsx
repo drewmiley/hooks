@@ -16,7 +16,7 @@ const V4 = props => {
 
     return (
         <>
-            <h2>Hooks V4</h2>
+            <h2>Hooks V4 - Using initialised to replicate 'did mount' and 'did update' lifecycle methods</h2>
             <p>
                 <span>Count: {count}</span>
                 <span><button onClick={() => setCount(count + 1)}>Increment</button></span>

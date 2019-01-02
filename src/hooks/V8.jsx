@@ -11,7 +11,7 @@ const V8 = props => {
 
     return (
         <>
-            <h2>Hooks V8</h2>
+            <h2>Hooks V8 - Async call on mounting hook</h2>
             <ul>
                 {users.map((user, i) => (
                     <li key={i}>{user.name.title} {user.name.first} {user.name.last}</li>

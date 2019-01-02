@@ -12,7 +12,7 @@ const V10 = props => {
 
     return (
         <>
-            <h2>Hooks V10</h2>
+            <h2>Hooks V10 - Multiple uses of useEffect in same hook</h2>
             <p>
                 <span>Count: {props.count}</span>
                 <span><button onClick={props.increment}>Increment</button></span>

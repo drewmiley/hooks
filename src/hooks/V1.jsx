@@ -13,7 +13,7 @@ const V1 = () => {
 
     return (
         <>
-            <h2>Hooks V1</h2>
+            <h2>Hooks V1 - Example of useState for input</h2>
             <p>
                 <input type='text' placeholder='Input' value={value} onChange={onChange} />
                 <button onClick={onClick}>Log Value</button>

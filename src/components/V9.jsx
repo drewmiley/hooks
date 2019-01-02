@@ -27,7 +27,7 @@ export default class V9 extends Component {
     render() {
         return (
             <>
-                <h2>Component V9</h2>
+                <h2>Component V9 - Example use of reducer in setting internal state</h2>
                 Count: {this.state.count}
                 <button onClick={() => this.dispatch({ type: 'reset' })}>Reset</button>
                 <button onClick={() => this.dispatch({ type: 'increment' })}>Increment</button>

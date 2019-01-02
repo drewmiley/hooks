@@ -8,7 +8,7 @@ const V7 = props => {
 
     return (
         <>
-            <h2>Hooks V7</h2>
+            <h2>Hooks V7 - useEffect replicates 'willUnmount' lifecycle method</h2>
             <p>
                 <span>Count: {props.count}</span>
                 <span><button onClick={props.increment}>Increment</button></span>

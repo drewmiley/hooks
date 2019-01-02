@@ -15,7 +15,7 @@ export default class V8 extends Component {
     render() {
         return (
             <>
-                <h2>Component V8</h2>
+                <h2>Component V8 - Async call in componentDidMount</h2>
                 <ul>
                     {this.state.users.map((user, i) => (
                         <li key={i}>{user.name.title} {user.name.first} {user.name.last}</li>

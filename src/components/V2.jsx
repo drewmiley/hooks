@@ -16,7 +16,7 @@ export default class V2 extends Component {
     render() {
         return (
             <>
-                <h2 style={{backgroundColor: this.state.colors[this.state.index]}}>Component V2</h2>
+                <h2 style={{backgroundColor: this.state.colors[this.state.index]}}>Component V2 - Component updates on all props changes</h2>
                 <p>
                     <span>Count: {this.props.count}</span>
                     <span><button onClick={this.props.increment}>Increment</button></span>

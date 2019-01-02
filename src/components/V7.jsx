@@ -12,7 +12,7 @@ export default class V7 extends Component {
     render() {
         return (
             <>
-                <h2>Component V7</h2>
+                <h2>Component V7 - Simple example of component unmounting</h2>
                 <p>
                     <span>Count: {this.props.count}</span>
                     <span><button onClick={this.props.increment}>Increment</button></span>

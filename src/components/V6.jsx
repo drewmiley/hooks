@@ -19,7 +19,7 @@ export default class V6 extends Component {
     render() {
         return (
             <>
-                <h2>Component V6</h2>
+                <h2>Component V6 - Internal state affects redux call</h2>
                 <p>
                     <span>Count: {this.state.count}</span>
                     <span><button onClick={() => this.setCount(this.state.count + 1)}>Increment</button></span>

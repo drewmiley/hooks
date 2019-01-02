@@ -16,7 +16,7 @@ const V3 = props => {
 
     return (
         <>
-            <h2 style={{backgroundColor: colors[index]}}>Hooks V3</h2>
+            <h2 style={{backgroundColor: colors[index]}}>Hooks V3 - Combination of useState and useEffect, updating on input change and random number change</h2>
             <input type='text' placeholder='Input' value={value} onChange={onChange} />
         </>
     );

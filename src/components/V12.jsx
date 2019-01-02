@@ -25,7 +25,7 @@ export default class V12 extends Component {
     render() {
         return (
             <>
-                <h2>Component V12</h2>
+                <h2>Component V12 - Creates callback function depending on loops value</h2>
                 <p>
                     <span>Count * Random: {this.state.value}</span>
                 </p>

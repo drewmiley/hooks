@@ -17,7 +17,7 @@ const V9 = props => {
     const [state, dispatch] = useReducer(reducer, { count: 0 });
     return (
         <>
-          <h2>Hooks V9</h2>
+          <h2>Hooks V9 - useReducer used for setting internal state</h2>
             Count: {state.count}
             <button onClick={() => dispatch({ type: 'reset' })}>Reset</button>
             <button onClick={() => dispatch({ type: 'increment' })}>Increment</button>

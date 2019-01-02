@@ -19,7 +19,7 @@ const V12 = props => {
 
     return (
         <>
-            <h2>Hooks V12</h2>
+            <h2>Hooks V12 - Example use of useCallback</h2>
             <p>
                 <span>Count * Random: {value}</span>
             </p>

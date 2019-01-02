@@ -20,7 +20,7 @@ export default class V5 extends Component {
     render() {
         return (
             <>
-                <h2>Component V5</h2>
+                <h2>Component V5 - Example of internal state being overwritten by props change</h2>
                 <p>
                     <span>Count: {this.state.count}</span>
                     <span><button onClick={() => this.setCount(this.state.count + 1)}>Increment</button></span>

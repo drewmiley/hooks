@@ -9,7 +9,7 @@ const V6 = props => {
 
     return (
         <>
-            <h2>Hooks V6</h2>
+            <h2>Hooks V6 - Internal state affects redux call</h2>
             <p>
                 <span>Count: {count}</span>
                 <span><button onClick={() => setCount(count + 1)}>Increment</button></span>

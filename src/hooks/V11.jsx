@@ -12,7 +12,7 @@ const V11 = props => {
     const product = useMemo(() => getProduct(props.count, props.random), [trigger]);
     return (
         <>
-            <h2>Hooks V11</h2>
+            <h2>Hooks V11 - Example use of useMemo</h2>
             <p>
                 <span>Count * Random: {product}</span>
                 <span><button onClick={() => setTrigger(!trigger)}>Get Product</button></span>
