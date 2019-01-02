@@ -55,10 +55,10 @@ Version 7, but with multiple uses of useEffect.
 
 Expensive function call utilising useMemo, along with a button to trigger the call.
 
-# Version 12
+## Version 12
 
 Expensive function call utilising useCallback, along with a button to trigger the call and a number input for number of loops.
 
-# Version 13
+## Version 13
 
 Example of useContext for heading values.
